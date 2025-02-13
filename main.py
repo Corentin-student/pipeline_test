@@ -16,7 +16,6 @@ class SimplePipeline:
 # Test si exécuté directement
 def main():
     pipeline = SimplePipeline()
-
-    print(pipeline.preprocess("Hello, World! Ceci est un TEST."))
-    sleep(3)
-
+    while True:
+        print(pipeline.preprocess("Hello, World! Ceci est un TEST."))
+        sleep(3)
