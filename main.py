@@ -1,4 +1,6 @@
 import string
+from time import sleep
+
 
 class SimplePipeline:
     def __init__(self):
@@ -12,6 +14,9 @@ class SimplePipeline:
         return tokens
 
 # Test si exécuté directement
-if __name__ == "__main__":
+def main():
     pipeline = SimplePipeline()
-    print(pipeline.preprocess("Hello, World! Ceci est un TEST."))
+    while True:
+        print(pipeline.preprocess("Hello, World! Ceci est un TEST."))
+        sleep(3)
+
